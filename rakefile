@@ -1,0 +1,11 @@
+require "rake/testtask"
+
+require_relative "app"
+
+load 'tasks/migrate.rake'
+Rake::TestTask.new(:test) do |t|
+  t.libs << "test"
+  t.pattern = "test/**/*_test.rb"
+end
+
+task :default => :test

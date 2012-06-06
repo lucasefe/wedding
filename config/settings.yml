@@ -1,0 +1,4 @@
+default_email: "lucasefe@gmail.com"
+smtp_settings: 
+  url: "smtp://localhost:1025"
+
