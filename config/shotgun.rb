@@ -17,5 +17,5 @@ DB = Sequel.connect("sqlite://db/#{ENV['RACK_ENV']}.sqlite3")
 DB.loggers << Logger.new($stdout)
 
 # require 'bourbon'
+require 'bourbon'
 SASS_LOAD_PATHS = ["./views/stylesheets/bourbon"]
-
