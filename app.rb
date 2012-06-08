@@ -28,7 +28,7 @@ Cuba.define do
   on "stylesheets", extension("css") do |file|
     res.headers["Cache-Control"] = "public, max-age=29030400" if req.query_string =~ /[0-9]{10}/
     res.headers["Content-Type"] = "text/css; charset=utf-8"
-    res.write render("views/#{file}.sass", {}, load_paths: SASS_LOAD_PATHS )
+    res.write render("views/sass/#{file}.sass", {}, load_paths: SASS_LOAD_PATHS )
   end
 
   on "invitaciones/:id" do |id|
