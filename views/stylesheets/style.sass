@@ -3,7 +3,9 @@
 @import 'bourbon'
 
 body
-  background: #C0E4DF
+  background: #E2F0E1
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+
   header
     background: #F4F4C9 url('../images/header.png') repeat center center
     border-bottom: 1px solid black
@@ -27,3 +29,50 @@ body
       float: right
       height: 185px
       width: 119px
+
+  #wrapper
+    @include linear-gradient(#C0E4DF, #E2F0E1)
+    padding-top: 220px
+
+    img#titular
+      margin: 0 auto 20px
+      display: block
+
+    section#when
+      text-align: center
+      div
+        @include inline-block
+        color: gray
+        font-size: 17px
+        letter-spacing: 0.3px
+        margin: 0 50px
+        text-align: left
+        img
+        address
+          h1
+            font-weight: bold
+
+    hr#cherry_bomb
+      background: url('../images/cherry_bomb.png') no-repeat center center
+      border: 0 none
+      height: 28px
+      margin: 20px 50px
+
+    #money_in_the_basket
+      font-size: 12px
+      text-align: center
+      padding-bottom: 30px
+      h1
+        font-size: 13px
+        margin-bottom: 10px
+      h2
+        @include inline-block
+        margin-right: 20px
+        vertical-align: top
+
+      hgroup
+        @include inline-block
+        text-align: left
+        h3
+        h4
+        h5
